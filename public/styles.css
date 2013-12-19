@@ -1,0 +1,73 @@
+body {
+  
+  color: blue;
+  text-align: center;
+  font-family: 'Volkhov', serif;
+}
+
+h1 {
+  font-size: 150px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 100px;
+  margin: 0;
+  position: fixed;
+  top: 30%;
+  left: 23%;
+}
+
+p {
+  font-family: 'Volkhov', serif;
+  margin-top: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+.sidebar {
+  height: 100%;
+  width: 190px;
+  left: 0;
+  top:0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: block;
+  position: absolute;
+  font-family: 'Volkhov', serif;
+}
+
+ul {
+  font-family: 'Volkhov', serif;
+  font-size: 12pt;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  padding-right: 50;
+}
+
+li {
+  list-style-type:none;
+}
+
+li:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+span {
+  color:blue;
+}
+
+.birthday {
+  background-image: url('http://25.media.tumblr.com/0b3d7fc6691726696b78f1db91f0465b/tumblr_mqfc37R9Ah1qb6zbgo1_500.gif');
+  color: red;
+  background-size: 100%;
+}
+
+.xmas {
+  background-image: url('http://christmasgifs.org/wp-content/uploads/2013/12/dixon_full.gif');
+  color: red;
+  background-height: 100%;
+}

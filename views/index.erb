@@ -1,0 +1,11 @@
+<h2> Is it <%= @person.capitalize %>'s birthday today? </h2>
+<h1><%= @result %></h1>  
+
+<p>There are still <span><%= @countdown_days %></span> days left to <%=@person.capitalize%>'s birthday,</p> 
+<p> Or <span><%= @countdown_hours %></span> hours,</p> 
+<p> Or even <span><%= @countdown_minutes %></span>  minutes. </p> 
+<p>More precisely there are <span><%= @countdown_seconds %></span> seconds to <%=@person.capitalize%>'s birthday.</p> 
+
+ <a href="/<%=@person%>/pretend">
+    <div class="button"><h2> (What if it is) </h2></div>
+  </a>
