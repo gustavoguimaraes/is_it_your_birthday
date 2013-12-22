@@ -8,9 +8,9 @@ module Game
 
     before do 
       @count_today = Time.new
-      @count_birthday = {"tara" => Time.new(2014,7,27), "roberta" => Time.new(2014,10,30), "jen" => Time.new(2014,11,13),"rachel"=> Time.new(2014,11,13),"sandy" => Time.new(2014,3,15), "gustavo" => Time.new(2014,9,19),"baby jesus" => Time.new(2013,12,25)}
+      @count_birthday = {"tara" => Time.new(2014,7,27), "roberta" => Time.new(2014,10,30), "jen" => Time.new(2014,11,13),"rachel"=> Time.new(2014,11,13),"sandy" => Time.new(2014,3,15), "gustavo" => Time.new(2014,9,19),"baby jesus" => Time.new(2013,12,25), "daniel" => Time.new(2014,5,30)}
       @today = Date.today.strftime("%m/%d")
-      @birthday = {"tara" =>"07/27", "roberta" => "10/30", "jen" => "11/13","rachel"=> "11/13","sandy" => "3/15", "gustavo" => "9/19", "baby jesus"=> "12/25"} 
+      @birthday = {"tara" =>"07/27", "roberta" => "10/30", "jen" => "11/13","rachel"=> "11/13","sandy" => "3/15", "gustavo" => "9/19", "baby jesus"=> "12/25","daniel" => "5/30"} 
 
     end
     
