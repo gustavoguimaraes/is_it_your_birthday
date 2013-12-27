@@ -6,9 +6,16 @@ Bundler.require
 module Game
  class Is_Birthday_App < Sinatra::Application
 
-    before do 
+    before do
+      year = Time.new.strftime("%Y").to_i
+      
       @count_today = Time.new
-      @count_birthday = {"tara" => Time.new(2014,7,26), "roberta" => Time.new(2014,10,30), "jen" => Time.new(2014,11,13),"rachel"=> Time.new(2014,11,13),"sandy" => Time.new(2014,3,15), "gustavo" => Time.new(2014,9,19),"baby jesus" => Time.new(2013,12,25), "daniel" => Time.new(2014,5,30)}
+      @count_birthday = {"tara" => Time.new(year,7,26), "roberta" => Time.new(year,10,30), "jen" => Time.new(year,11,13),"rachel"=> Time.new(year,11,13),"sandy" => Time.new(year,3,15), "gustavo" => Time.new(year,9,19),"baby jesus" => Time.new(year,12,25), "daniel" => Time.new(year,5,30)}
+      
+      @count_birthday.select{|person, bday| (bday.to_i - @count_today.to_i) <0 ? year = Time.new.strftime("%Y").to_i + 1 : year = Time.new.strftime("%Y").to_i}
+
+      @count_birthday = {"tara" => Time.new(year,7,26), "roberta" => Time.new(year,10,30), "jen" => Time.new(year,11,13),"rachel"=> Time.new(year,11,13),"sandy" => Time.new(year,3,15), "gustavo" => Time.new(year,9,19),"baby jesus" => Time.new(year,12,25), "daniel" => Time.new(year,5,30)}
+
       @today = Date.today.strftime("%m/%d")
       @birthday = {"tara" =>"07/26", "roberta" => "10/30", "jen" => "11/13","rachel"=> "11/13","sandy" => "3/15", "gustavo" => "9/19", "baby jesus"=> "12/25","daniel" => "5/30"} 
 
